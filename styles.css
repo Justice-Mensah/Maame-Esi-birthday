@@ -626,7 +626,9 @@ section {
 .frame[data-index="3"] img { object-position: 50% 8%;  } /* 4.jpeg — face is very near the top */
 .frame[data-index="4"] img { object-position: 50% 15%; } /* 5.jpg  — head & shoulders */
 .frame[data-index="5"] img { object-position: 50% 12%; } /* 6.jpg  — face in top sliver */
-.frame[data-index="6"] video { object-position: 50% 30%; } /* video poster */
+.frame[data-index="6"] img { object-position: 50% 35%; } /* 9.jpg  — full-body, face mid-upper */
+.frame[data-index="7"] video { object-position: 50% 35%; } /* 7.mp4 (poster = 9.jpg) */
+.frame[data-index="8"] video { object-position: 50% 35%; } /* 8.MP4 */
 
 .frame:hover {
   transform: translateY(-6px);
