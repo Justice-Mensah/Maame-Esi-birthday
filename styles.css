@@ -530,6 +530,30 @@ section {
 
 .letter__body p { margin-bottom: 1.4em; }
 
+.silly-list {
+  list-style: none;
+  padding: 0;
+  margin: 0.4em 0 1.6em;
+}
+
+.silly-list li {
+  position: relative;
+  padding-left: 32px;
+  margin-bottom: 0.7em;
+  font-family: var(--serif);
+  line-height: 1.6;
+}
+
+.silly-list li::before {
+  content: "✦";
+  position: absolute;
+  left: 6px;
+  top: 0.1em;
+  color: var(--gold);
+  font-size: 0.9em;
+  opacity: 0.85;
+}
+
 .dropcap {
   float: left;
   font-family: var(--serif-italic);
