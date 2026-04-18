@@ -1,0 +1,323 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#2a0a1f" />
+
+    <title>Happy Birthday, Elizabeth — A Love Letter in Memories</title>
+    <meta
+      name="description"
+      content="A little corner of the internet, built just for you. For every laugh, every late-night call, every memory worth keeping. Happy birthday, Maame Esi." />
+    <meta name="author" content="Justice" />
+
+    <!-- Canonical + social sharing (Open Graph / Twitter) -->
+    <link rel="canonical" href="https://justice-mensah.github.io/Maame-Esi-birthday/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Happy Birthday, Elizabeth" />
+    <meta property="og:title" content="Happy Birthday, Elizabeth 🎂" />
+    <meta
+      property="og:description"
+      content="A love letter in memories — for my bestie, Maame Esi. Open me on your special day." />
+    <meta property="og:url" content="https://justice-mensah.github.io/Maame-Esi-birthday/" />
+    <meta
+      property="og:image"
+      content="https://justice-mensah.github.io/Maame-Esi-birthday/og-image.jpg" />
+    <meta
+      property="og:image:secure_url"
+      content="https://justice-mensah.github.io/Maame-Esi-birthday/og-image.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="857" />
+    <meta property="og:image:height" content="1200" />
+    <meta property="og:image:alt" content="A photograph of Elizabeth, my beautiful bestie." />
+    <meta property="og:locale" content="en_US" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Happy Birthday, Elizabeth 🎂" />
+    <meta
+      name="twitter:description"
+      content="A love letter in memories — for my bestie, Maame Esi." />
+    <meta
+      name="twitter:image"
+      content="https://justice-mensah.github.io/Maame-Esi-birthday/og-image.jpg" />
+
+    <!-- WhatsApp picks up the first <meta property="og:image"> it finds, and is
+         strict about ≤300KB file size + accessible absolute URL. og-image.jpg is
+         optimized specifically for this (238KB, under the cache cap). -->
+
+    <link rel="icon" type="image/jpeg" href="og-image.jpg" />
+    <link rel="apple-touch-icon" href="og-image.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Ambient background: animated gradient + floating petals -->
+    <div class="backdrop" aria-hidden="true">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+    <canvas id="petals" aria-hidden="true"></canvas>
+
+    <!-- Intro curtain -->
+    <div id="curtain" class="curtain" role="dialog" aria-label="Open your gift">
+      <div class="curtain__inner">
+        <p class="curtain__kicker">a little something · from Justice</p>
+        <h1 class="curtain__title">
+          <span>For</span>
+          <em>Elizabeth</em>
+        </h1>
+        <p class="curtain__sub">
+          Tap the ribbon to unwrap your birthday page. It was built for you — only you.
+        </p>
+        <button id="openGift" class="ribbon" aria-label="Unwrap gift">
+          <span class="ribbon__label">Unwrap</span>
+          <span class="ribbon__glow" aria-hidden="true"></span>
+        </button>
+        <p class="curtain__hint">Best viewed with sound on 💛</p>
+      </div>
+    </div>
+
+    <main id="page" class="page" aria-hidden="true">
+      <!-- ===== HERO ===== -->
+      <section class="hero" id="hero">
+        <p class="eyebrow reveal">18 · April · Today We Celebrate You</p>
+        <h1 class="hero__title reveal">
+          Happy Birthday,<br />
+          <span class="script">Elizabeth</span>
+        </h1>
+        <p class="hero__sub reveal">
+          Also known as <em>Maame Esi</em> — the girl who laughs with her whole chest,
+          loves without asking, and makes every room softer just by walking in.
+        </p>
+
+        <div class="hero__meta reveal">
+          <div class="meta__item">
+            <span class="meta__n" id="years">—</span>
+            <span class="meta__l">Trips around the sun</span>
+          </div>
+          <div class="meta__divider" aria-hidden="true"></div>
+          <div class="meta__item">
+            <span class="meta__n" id="days">—</span>
+            <span class="meta__l">Days of being iconic</span>
+          </div>
+          <div class="meta__divider" aria-hidden="true"></div>
+          <div class="meta__item">
+            <span class="meta__n">∞</span>
+            <span class="meta__l">Reasons you are loved</span>
+          </div>
+        </div>
+
+        <a href="#letter" class="scroll-cue reveal" aria-label="Scroll to letter">
+          <span>Scroll</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 4v14m0 0l-6-6m6 6l6-6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+      </section>
+
+      <!-- ===== LETTER ===== -->
+      <section class="letter" id="letter">
+        <div class="letter__wrap reveal">
+          <p class="section-kicker">— a letter —</p>
+          <h2 class="section-title">To the one who makes the world <em>kinder</em>.</h2>
+
+          <div class="letter__body">
+            <p class="drop">
+              <span class="dropcap">E</span>lizabeth — Maame Esi — wherever this finds you today,
+              I hope you feel it: the weight of being loved. Not loudly, not for show,
+              but steadily, the way good things last.
+            </p>
+
+            <p>
+              There is a specific kind of person the world does not deserve and gets anyway,
+              and you are one of them. You show up. You listen like it's the only thing that
+              matters. You remember the small details — the favorite snack, the offhand
+              worry, the joke from three weeks ago — and you hand them back to people like
+              little gifts. That is not small. That is the whole thing.
+            </p>
+
+            <p>
+              I've watched you carry days that would have broken other people and still find
+              a way to laugh before the night was over. I've watched you pour into everyone
+              around you and then quietly refuse to be thanked. Today is not that day. Today,
+              the pouring goes the other way.
+            </p>
+
+            <p>
+              So here is a page with no purpose except you. Scroll slowly. Look at the
+              pictures. Remember the stories behind them — the ones only we know. And if at
+              any point you forget for even a second how deeply you are adored, come back
+              here and read this line:
+            </p>
+
+            <blockquote class="pullquote">
+              You are my favorite person to have met. Happy birthday, bestie.
+            </blockquote>
+
+            <p class="sign">
+              With all my love, <br />
+              <span class="sign__name">Justice</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== MEMORY CATALOG ===== -->
+      <section class="catalog" id="memories">
+        <header class="catalog__head reveal">
+          <p class="section-kicker">— the memory catalog —</p>
+          <h2 class="section-title">Moments, <em>archived</em>.</h2>
+          <p class="section-lede">
+            A small museum of us. Tap any frame to open it.
+          </p>
+        </header>
+
+        <div class="gallery" id="gallery">
+          <figure class="frame frame--tall reveal" data-index="0">
+            <img src="images/1.jpeg" alt="Memory 01 — Elizabeth" loading="lazy" />
+            <figcaption>
+              <span class="frame__num">01</span>
+              <span class="frame__cap">Golden hour suits you.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="frame frame--wide reveal" data-index="1">
+            <img src="images/2.jpeg" alt="Memory 02 — Elizabeth" loading="lazy" />
+            <figcaption>
+              <span class="frame__num">02</span>
+              <span class="frame__cap">That laugh. That one.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="frame reveal" data-index="2">
+            <img src="images/3.jpg" alt="Memory 03 — Elizabeth" loading="lazy" />
+            <figcaption>
+              <span class="frame__num">03</span>
+              <span class="frame__cap">Effortless, as always.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="frame frame--hero reveal" data-index="3">
+            <img src="images/4.jpeg" alt="Memory 04 — Elizabeth" loading="lazy" />
+            <figcaption>
+              <span class="frame__num">04</span>
+              <span class="frame__cap">The one I'll keep forever.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="frame reveal" data-index="4">
+            <img src="images/5.jpg" alt="Memory 05 — Elizabeth" loading="lazy" />
+            <figcaption>
+              <span class="frame__num">05</span>
+              <span class="frame__cap">A whole mood.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="frame frame--tall reveal" data-index="5">
+            <img src="images/6.jpg" alt="Memory 06 — Elizabeth" loading="lazy" />
+            <figcaption>
+              <span class="frame__num">06</span>
+              <span class="frame__cap">Proof the universe shows off sometimes.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="frame frame--video frame--wide reveal" data-index="6" data-video="true">
+            <!-- #t=0.5 forces Safari/Chrome/WhatsApp to paint the frame at 0.5s
+                 as a poster, so the tile never looks blank before playback. -->
+            <video
+              src="images/7.mp4#t=0.5"
+              muted
+              loop
+              playsinline
+              preload="metadata"
+              aria-label="A memory in motion"></video>
+            <span class="play" aria-hidden="true">
+              <svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg>
+            </span>
+            <figcaption>
+              <span class="frame__num">07</span>
+              <span class="frame__cap">A memory in motion.</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ===== WISHES / STATS ===== -->
+      <section class="wishes reveal" id="wishes">
+        <h2 class="section-title center">Three wishes for your <em>new year</em>.</h2>
+        <div class="wishes__grid">
+          <article class="wish">
+            <span class="wish__num">I.</span>
+            <h3>Softness.</h3>
+            <p>Let this year be gentle with you — slow mornings, long exhales, nothing that costs more than it gives.</p>
+          </article>
+          <article class="wish">
+            <span class="wish__num">II.</span>
+            <h3>Rooms that love you.</h3>
+            <p>May every space you walk into know your worth before you even have to prove it. May you never have to shrink again.</p>
+          </article>
+          <article class="wish">
+            <span class="wish__num">III.</span>
+            <h3>Your wildest yes.</h3>
+            <p>The dream that scares you a little — the one you haven't said out loud yet — this is its year. Go get it, Maame Esi.</p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== FINALE ===== -->
+      <section class="finale" id="finale">
+        <div class="finale__card reveal">
+          <p class="section-kicker">— p.s. —</p>
+          <h2 class="finale__title">
+            Make a wish, <em>bestie</em>.
+          </h2>
+          <button id="blowCandle" class="candle" aria-label="Tap to blow out the candle">
+            <span class="cake">
+              <span class="cake__plate"></span>
+              <span class="cake__layer cake__layer--bottom"></span>
+              <span class="cake__layer cake__layer--top"></span>
+              <span class="cake__candle">
+                <span class="cake__flame" id="flame"></span>
+              </span>
+            </span>
+            <span class="candle__hint" id="candleHint">tap the flame</span>
+          </button>
+          <p class="finale__sign">
+            Forever in your corner,<br />
+            <span class="sign__name">Justice</span> 💛
+          </p>
+        </div>
+      </section>
+
+      <footer class="foot">
+        <p>
+          Built with love · <span id="year"></span> · Share this with her
+          <button class="copy" id="copyLink" aria-label="Copy link to this page">copy link</button>
+        </p>
+      </footer>
+    </main>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Memory viewer" aria-hidden="true">
+      <button class="lightbox__close" id="lbClose" aria-label="Close">×</button>
+      <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Previous">‹</button>
+      <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Next">›</button>
+      <div class="lightbox__stage" id="lbStage"></div>
+      <p class="lightbox__cap" id="lbCap"></p>
+    </div>
+
+    <!-- Confetti canvas for the wish -->
+    <canvas id="confetti" aria-hidden="true"></canvas>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
