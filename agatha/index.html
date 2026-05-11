@@ -1,0 +1,389 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="theme-color" content="#faf6ef" />
+
+    <title>Happy Birthday, Agatha — A Day the Lord Has Made</title>
+    <meta
+      name="description"
+      content="A celebration of Agatha — her life, her light, and the God who wrote her into this world. Happy birthday, beautiful soul." />
+
+    <!-- Open Graph / WhatsApp / Twitter -->
+    <link rel="canonical" href="https://justice-mensah.github.io/Maame-Esi-birthday/agatha/" />
+
+    <meta property="og:type" content="website" />
+    <meta property="og:site_name" content="Happy Birthday, Agatha" />
+    <meta property="og:title" content="Happy Birthday, Agatha 🎂" />
+    <meta
+      property="og:description"
+      content="A celebration of Agatha — her life, her light, and the God who wrote her into this world." />
+    <meta property="og:url" content="https://justice-mensah.github.io/Maame-Esi-birthday/agatha/" />
+    <meta
+      property="og:image"
+      content="https://justice-mensah.github.io/Maame-Esi-birthday/agatha/og-image.jpg" />
+    <meta
+      property="og:image:secure_url"
+      content="https://justice-mensah.github.io/Maame-Esi-birthday/agatha/og-image.jpg" />
+    <meta property="og:image:type" content="image/jpeg" />
+    <meta property="og:image:width" content="900" />
+    <meta property="og:image:height" content="1200" />
+    <meta property="og:image:alt" content="Agatha — the birthday girl." />
+    <meta property="og:locale" content="en_US" />
+
+    <meta name="twitter:card" content="summary_large_image" />
+    <meta name="twitter:title" content="Happy Birthday, Agatha 🎂" />
+    <meta
+      name="twitter:description"
+      content="A celebration of her life — and of the God who gave her to us." />
+    <meta
+      name="twitter:image"
+      content="https://justice-mensah.github.io/Maame-Esi-birthday/agatha/og-image.jpg" />
+
+    <link rel="icon" type="image/jpeg" href="og-image.jpg" />
+    <link rel="apple-touch-icon" href="og-image.jpg" />
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,400;0,9..144,500;0,9..144,600;1,9..144,400&family=Inter:wght@300;400;500;600&display=swap"
+      rel="stylesheet" />
+
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <!-- Ambient backdrop -->
+    <div class="backdrop" aria-hidden="true">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+    </div>
+    <canvas id="dust" aria-hidden="true"></canvas>
+
+    <!-- Intro curtain -->
+    <div id="curtain" class="curtain" role="dialog" aria-label="Open the celebration">
+      <div class="curtain__inner">
+        <p class="curtain__kicker">a celebration · for one woman</p>
+        <h1 class="curtain__title">
+          <span>For</span>
+          <em>Agatha</em>
+        </h1>
+        <p class="curtain__sub">
+          A small corner of the world, written for the day you were born.
+          Open it gently — it's all about you.
+        </p>
+        <button id="openGift" class="ribbon" aria-label="Begin">
+          <span class="ribbon__label">Begin</span>
+          <span class="ribbon__glow" aria-hidden="true"></span>
+        </button>
+        <p class="curtain__hint">— with quiet joy</p>
+      </div>
+    </div>
+
+    <main id="page" class="page" aria-hidden="true">
+      <!-- ===== HERO ===== -->
+      <section class="hero" id="hero">
+        <p class="eyebrow reveal">— Today We Honor You —</p>
+        <h1 class="hero__title reveal">
+          Happy Birthday,<br />
+          <span class="script">Agatha</span>
+        </h1>
+        <p class="hero__sub reveal">
+          This is your day. The one heaven set aside, long before any of us
+          knew your name. Today, we celebrate you — and we thank God for
+          writing you into the world.
+        </p>
+
+        <div class="hero__meta reveal">
+          <div class="meta__item">
+            <span class="meta__n" id="years">—</span>
+            <span class="meta__l">Years of grace</span>
+          </div>
+          <div class="meta__divider" aria-hidden="true"></div>
+          <div class="meta__item">
+            <span class="meta__n" id="days">—</span>
+            <span class="meta__l">Days of blessing</span>
+          </div>
+          <div class="meta__divider" aria-hidden="true"></div>
+          <div class="meta__item">
+            <span class="meta__n">∞</span>
+            <span class="meta__l">Reasons to give thanks</span>
+          </div>
+        </div>
+
+        <a href="#letter" class="scroll-cue reveal" aria-label="Scroll to the letter">
+          <span>Continue</span>
+          <svg viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 4v14m0 0l-6-6m6 6l6-6" fill="none" stroke="currentColor" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </a>
+      </section>
+
+      <!-- ===== VERSE ===== -->
+      <section class="verse" id="verse">
+        <div class="verse__wrap reveal">
+          <p class="verse__line">
+            “This is the day the Lord has made;<br />
+            let us rejoice and be glad in it.”
+          </p>
+          <p class="verse__ref">— Psalm 118:24</p>
+        </div>
+      </section>
+
+      <!-- ===== LETTER ===== -->
+      <section class="letter" id="letter">
+        <div class="letter__wrap reveal">
+          <p class="section-kicker">— for Agatha —</p>
+          <h2 class="section-title">A day the Lord has made — <em>for you</em>.</h2>
+
+          <div class="letter__body">
+            <p class="drop">
+              <span class="dropcap">T</span>oday, we lift our hearts in gratitude.
+              Not because of a date on a calendar — but because of the woman the
+              calendar is honoring.
+            </p>
+
+            <p>
+              Agatha, today the world pauses to celebrate you, and somewhere above
+              all of this, heaven is celebrating too. There is something quiet and
+              sacred about a birthday. It is one of the few days in the year that
+              exists for a single reason: to look at a person, and say, <em>thank
+              God you are here.</em>
+            </p>
+
+            <p>
+              So today, that is exactly what we say. <em>Thank You, Father</em> —
+              for her life, for the years You have given her, for every chapter
+              You have already written and every one You are still writing.
+              <em>Thank You</em> for choosing this world to be the one she was
+              born into. We do not take it lightly.
+            </p>
+
+            <p>
+              And Agatha — thank <em>you</em>. For the way you move through this
+              world with a grace that is hard to name. For the kindness you carry
+              without needing an audience. For the laugh that makes every room
+              feel a little safer. For being, in ways you may never fully see, an
+              answer to somebody else's prayer. Probably more than one.
+            </p>
+
+            <blockquote class="pullquote">
+              You are not an accident. You are a gift, with a date on it, and the date is today.
+            </blockquote>
+
+            <p>
+              So this day is yours — wholly, completely, no apologies. Wear what
+              you want. Eat the cake. Smile until your face hurts. Take all the
+              photos. Dance even if no one is watching. The God who began this
+              good work in you is not finished with it, and this year is part of
+              the unfolding.
+            </p>
+
+            <p>
+              Whatever you are quietly carrying into this new year — bring it.
+              Whatever you are quietly hoping for — name it. He hears even the
+              prayers you do not know how to say out loud.
+            </p>
+
+            <p class="sign">
+              Happy birthday, Agatha. May this year find you well, found, and full. <br />
+              <span class="sign__name">With every blessing.</span>
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <!-- ===== GALLERY ===== -->
+      <section class="catalog" id="memories">
+        <header class="catalog__head reveal">
+          <p class="section-kicker">— a small archive —</p>
+          <h2 class="section-title">Moments of <em>you</em>.</h2>
+          <p class="section-lede">
+            A few frames from the journey. Tap any of them to look closer.
+          </p>
+        </header>
+
+        <div class="gallery" id="gallery">
+          <figure class="frame frame--hero reveal" data-index="0">
+            <img src="../images2/3.jpeg" alt="Agatha — portrait" loading="lazy" />
+            <figcaption>
+              <span class="frame__num">01</span>
+              <span class="frame__cap">The smile they remember.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="frame frame--tall reveal" data-index="1">
+            <img src="../images2/2.jpeg" alt="Agatha — second portrait" loading="lazy" />
+            <figcaption>
+              <span class="frame__num">02</span>
+              <span class="frame__cap">Effortless.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="frame frame--tall reveal" data-index="2">
+            <img src="../images2/1.jpeg" alt="Agatha — at the water" loading="lazy" />
+            <figcaption>
+              <span class="frame__num">03</span>
+              <span class="frame__cap">Still waters, full heart.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="frame frame--video reveal" data-index="3" data-video="true">
+            <video src="../images2/v1.mp4#t=0.5" poster="../images2/3.jpeg" muted loop playsinline preload="metadata"></video>
+            <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
+            <figcaption>
+              <span class="frame__num">04</span>
+              <span class="frame__cap">A memory in motion.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="frame frame--video reveal" data-index="4" data-video="true">
+            <video src="../images2/v2.mp4#t=0.5" muted loop playsinline preload="metadata"></video>
+            <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
+            <figcaption>
+              <span class="frame__num">05</span>
+              <span class="frame__cap">Caught mid-joy.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="frame frame--video reveal" data-index="5" data-video="true">
+            <video src="../images2/v3.mp4#t=0.5" muted loop playsinline preload="metadata"></video>
+            <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
+            <figcaption>
+              <span class="frame__num">06</span>
+              <span class="frame__cap">A passing second.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="frame frame--video reveal" data-index="6" data-video="true">
+            <video src="../images2/v4.mp4#t=0.5" muted loop playsinline preload="metadata"></video>
+            <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
+            <figcaption>
+              <span class="frame__num">07</span>
+              <span class="frame__cap">Soft afternoon.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="frame frame--video frame--wide reveal" data-index="7" data-video="true">
+            <video src="../images2/v5.mp4#t=0.5" muted loop playsinline preload="metadata"></video>
+            <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
+            <figcaption>
+              <span class="frame__num">08</span>
+              <span class="frame__cap">Held in the moment.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="frame frame--video reveal" data-index="8" data-video="true">
+            <video src="../images2/v6.mp4#t=0.5" muted loop playsinline preload="metadata"></video>
+            <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
+            <figcaption>
+              <span class="frame__num">09</span>
+              <span class="frame__cap">Joy, briefly.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="frame frame--video reveal" data-index="9" data-video="true">
+            <video src="../images2/v7.mp4#t=0.5" muted loop playsinline preload="metadata"></video>
+            <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
+            <figcaption>
+              <span class="frame__num">10</span>
+              <span class="frame__cap">Another quiet wonder.</span>
+            </figcaption>
+          </figure>
+
+          <figure class="frame frame--video frame--wide reveal" data-index="10" data-video="true">
+            <video src="../images2/v8.mp4#t=0.5" muted loop playsinline preload="metadata"></video>
+            <span class="play" aria-hidden="true"><svg viewBox="0 0 24 24"><path d="M8 5v14l11-7z" fill="currentColor"/></svg></span>
+            <figcaption>
+              <span class="frame__num">11</span>
+              <span class="frame__cap">One more for the keep.</span>
+            </figcaption>
+          </figure>
+        </div>
+      </section>
+
+      <!-- ===== BLESSINGS ===== -->
+      <section class="wishes reveal" id="wishes">
+        <h2 class="section-title center">Three blessings for your <em>new year</em>.</h2>
+        <p class="section-lede center wishes__lede">
+          Small prayers, written quietly into the calendar of your year.
+        </p>
+        <div class="wishes__grid">
+          <article class="wish">
+            <span class="wish__num">I.</span>
+            <h3>Favor.</h3>
+            <p>
+              May doors open before you knock. May the right rooms know your
+              name before you walk in. May this year carry you further than
+              you could have asked for or imagined.
+            </p>
+          </article>
+          <article class="wish">
+            <span class="wish__num">II.</span>
+            <h3>Peace.</h3>
+            <p>
+              May the noise quiet. May sleep come easily. May your heart find
+              the kind of rest that does not have to be earned — the kind that
+              is simply, freely given.
+            </p>
+          </article>
+          <article class="wish">
+            <span class="wish__num">III.</span>
+            <h3>Joy.</h3>
+            <p>
+              May you laugh more this year than last. May the good days
+              outnumber the hard ones, and may every hard one be held in a
+              hand bigger than yours.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <!-- ===== FINALE ===== -->
+      <section class="finale" id="finale">
+        <div class="finale__card reveal">
+          <p class="section-kicker">— a final word —</p>
+          <h2 class="finale__title">
+            Make a wish, <em>Agatha</em>.
+          </h2>
+          <button id="blowCandle" class="candle" aria-label="Tap to blow out the candle">
+            <span class="cake">
+              <span class="cake__plate"></span>
+              <span class="cake__layer cake__layer--bottom"></span>
+              <span class="cake__layer cake__layer--top"></span>
+              <span class="cake__candle">
+                <span class="cake__flame" id="flame"></span>
+              </span>
+            </span>
+            <span class="candle__hint" id="candleHint">tap the flame</span>
+          </button>
+          <p class="finale__sign">
+            Have a beautiful day, Agatha. <br />
+            <span class="sign__name">May the Lord bless you and keep you.</span>
+          </p>
+        </div>
+      </section>
+
+      <footer class="foot">
+        <p>
+          Made with grace · <span id="year"></span> · share with her
+          <button class="copy" id="copyLink" aria-label="Copy link to this page">copy link</button>
+        </p>
+      </footer>
+    </main>
+
+    <!-- Lightbox -->
+    <div id="lightbox" class="lightbox" role="dialog" aria-modal="true" aria-label="Memory viewer" aria-hidden="true">
+      <button class="lightbox__close" id="lbClose" aria-label="Close">×</button>
+      <button class="lightbox__nav lightbox__nav--prev" id="lbPrev" aria-label="Previous">‹</button>
+      <button class="lightbox__nav lightbox__nav--next" id="lbNext" aria-label="Next">›</button>
+      <div class="lightbox__stage" id="lbStage"></div>
+      <p class="lightbox__cap" id="lbCap"></p>
+    </div>
+
+    <canvas id="confetti" aria-hidden="true"></canvas>
+
+    <script src="script.js" defer></script>
+  </body>
+</html>
