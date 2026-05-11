@@ -41,33 +41,7 @@
   revealEls.forEach((el) => io.observe(el));
 
   /* ----------------------------------------------------------
-     Hero counters
-     Edit BIRTHDAY to Agatha's actual DOB for accurate counts.
-     ---------------------------------------------------------- */
-  const BIRTHDAY = new Date('2000-05-11');
-  const today = new Date();
-  const diffMs = today - BIRTHDAY;
-  const years  = Math.max(1, Math.floor(diffMs / (365.25 * 24 * 60 * 60 * 1000)));
-  const days   = Math.max(1, Math.floor(diffMs / (24 * 60 * 60 * 1000)));
-
-  animateCount(document.getElementById('years'), years, 1400);
-  animateCount(document.getElementById('days'),  days,  1800);
-
-  function animateCount(el, target, duration) {
-    if (!el) return;
-    const start = performance.now();
-    const step  = (t) => {
-      const p  = Math.min(1, (t - start) / duration);
-      const eased = 1 - Math.pow(1 - p, 3);
-      el.textContent = Math.floor(target * eased).toLocaleString();
-      if (p < 1) requestAnimationFrame(step);
-      else el.textContent = target.toLocaleString();
-    };
-    requestAnimationFrame(step);
-  }
-
-  /* ----------------------------------------------------------
-     Year + copy
+     Footer year + copy link
      ---------------------------------------------------------- */
   document.getElementById('year').textContent = new Date().getFullYear();
 
